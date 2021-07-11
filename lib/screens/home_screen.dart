@@ -340,33 +340,3 @@ class MovieCard extends StatelessWidget {
     );
   }
 }
-
-// class Post {
-//   final String? category;
-//   final int? id;
-//   final String? title;
-//   final String? body;
-//
-//   Post({this.category, this.id, this.title, this.body});
-//
-//   factory Post.fromJson(Map<String, dynamic> json) {
-//     return Post(
-//       category: json['userId'],
-//       id: json['id'],
-//       title: json['title'],
-//       body: json['description'],
-//     );
-//   }
-// }
-//
-// class Album {
-//   final int id;
-//
-//   Album({required this.id});
-//
-//   factory Album.fromJson(Map<String, dynamic> json) {
-//     return Album(
-//       id: json['_id'],
-//     );
-//   }
-// }

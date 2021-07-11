@@ -7,6 +7,7 @@ import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 import '../constants.dart';
+import '../post_model.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen(
@@ -29,11 +30,47 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  PostModel? _posts;
   final _nameController = TextEditingController();
   final _passwordController = TextEditingController();
   bool showSpinner = false;
   int? position;
   bool? flag = false;
+  // Future<PostModel> createPosts() async {
+  //   // showSpinner = true;
+  //   setState(() {
+  //     showSpinner = true;
+  //   });
+  //   final response = await http.post(
+  //     Uri.parse('https://hoblist.com/movieList'),
+  //     body: {
+  //       "category": "movies",
+  //       "language": "hindi",
+  //       "genre": "all",
+  //       "sort": "voting"
+  //     },
+  //   );
+  //
+  //   if (response.statusCode == 200) {
+  //     final String responseString = response.body;
+  //     print(PostModel.fromJson(jsonDecode(responseString)));
+  //     return PostModel.fromJson(jsonDecode(responseString));
+  //     // setState(() {
+  //     //   _posts = PostModel.fromJson(jsonDecode(responseString));
+  //     //   // showSpinner = false;
+  //     //   showSpinner = false;
+  //     // });
+  //   } else {
+  //     // If the server did not return a 201 CREATED response,
+  //     // then throw an exception.
+  //     throw Exception('Failed to create post album.');
+  //   }
+  // }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+  }
 
   @override
   Widget build(BuildContext context) {
